@@ -1,0 +1,6 @@
+{
+    "BE_TOKEN_PATH": "BE_token.json",
+    "MEMORY_DIR": "完整记忆内容",
+    "Y_OCR_DIR": "Y_OCR库",
+    "X_CONFIG_PATH": "./config/X_core.json"
+}
