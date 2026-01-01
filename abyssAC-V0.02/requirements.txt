@@ -1,0 +1,28 @@
+# 核心依赖
+jieba>=0.42.1
+PyYAML>=6.0
+pydantic>=2.0
+
+# AI模型支持
+openai>=1.0
+requests>=2.31.0
+transformers>=4.35.0
+torch>=2.0.0
+
+# Web API
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# 开发工具
+python-dotenv>=1.0.0
+colorama>=0.4.6
+tqdm>=4.66.0
+
+# 数据科学
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+
+# 日志
+loguru>=0.7.0

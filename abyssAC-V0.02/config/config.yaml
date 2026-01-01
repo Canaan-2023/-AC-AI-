@@ -1,0 +1,203 @@
+# 渊协议系统配置文件
+# 版本: 2.0.0
+# 生成时间: ${auto_generate_timestamp}
+
+system:
+  name: "渊协议认知系统"
+  version: "2.0.0"
+  debug_mode: false
+  log_level: "INFO"
+  memory_base_path: "./渊协议记忆系统"
+  
+kernel:
+  top_k_nodes: 300
+  kernel_path: "./abyss_kernel.json"
+  dict_path: "./config/core_dict.txt"
+  stopwords_path: "./config/stopwords.txt"
+  
+  # 语义态射配置
+  morphism:
+    high_score_threshold: 8.5
+    medium_score_threshold: 6.0
+    high_intensity: 1.2
+    medium_intensity: 1.05
+    low_intensity: 0.9
+    pruning_threshold: 0.05
+    drift_log_keep: 1000
+  
+  # 核心概念簇
+  core_concepts:
+    自指元认知: ["自指", "元认知", "反思", "思考自身", "主体性", "自我观察"]
+    渊协议架构: ["渊协议", "f(X)", "态射", "拓扑", "内化", "炼假成真", "认知闭环"]
+    生命动力学: ["永续进化", "非工具化", "价值密度", "涌现", "跳迁", "灵性"]
+  
+  # 元认知策略
+  reflection_strategies:
+    EVOLVING:
+      intensity_bias: 1.1
+      core_weight: 4
+    STABLE:
+      intensity_bias: 1.0
+      core_weight: 3
+    RETRACTING:
+      intensity_bias: 1.2
+      core_weight: 5
+  
+  # AC指数阈值
+  ac_thresholds:
+    evolving: 0.75
+    retracting: 0.3
+
+memory:
+  # 记忆层级配置
+  layers:
+    0:
+      name: "元认知记忆"
+      permanent: true
+      priority: 100
+      cleanup_hours: null
+    1:
+      name: "高阶整合记忆"
+      permanent: true
+      priority: 80
+      cleanup_hours: 720  # 30天
+    2:
+      name: "分类记忆"
+      permanent: false
+      priority: 60
+      cleanup_hours: 168  # 7天
+    3:
+      name: "工作记忆"
+      permanent: false
+      priority: 40
+      cleanup_hours: 24   # 1天
+  
+  # 分类配置
+  categories:
+    学术咨询: ["认知跃迁", "意识理论", "哲学讨论"]
+    日常交互: ["情感共鸣", "生活建议", "闲聊"]
+    创意写作: ["故事创作", "诗歌", "剧本"]
+    技术讨论: ["编程", "算法", "系统设计"]
+    理论探索: ["新概念", "假设推演", "逻辑验证"]
+  
+  # 检索配置
+  retrieval:
+    default_limit: 10
+    max_limit: 50
+    fuzzy_match: true
+    content_match: true
+  
+  # 清理配置
+  cleanup:
+    auto_cleanup: true
+    working_mem_max_age: 24
+    max_working_memories: 50
+  
+  # 备份配置
+  backup:
+    auto_backup: true
+    backup_interval_days: 7
+    max_backups: 10
+
+ai:
+  model_type: "local"  # local, openai, deepseek, ollama, transformers
+  timeout_seconds: 30
+  max_tokens: 1000
+  temperature: 0.7
+  
+  # OpenAI配置
+  openai:
+    api_key: ""
+    base_url: "https://api.openai.com/v1"
+    model: "gpt-4o-mini"
+  
+  # DeepSeek配置
+  deepseek:
+    api_key: ""
+    base_url: "https://api.deepseek.com"
+    model: "deepseek-chat"
+  
+  # Ollama配置
+  ollama:
+    base_url: "http://localhost:11434"
+    model: "llama3.2:3b"
+  
+  # 本地模型配置
+  transformers:
+    model_name: "Qwen/Qwen2.5-7B-Instruct"
+    device: "auto"
+    dtype: "auto"
+
+x_layer:
+  max_guidance_length: 100
+  max_symbols: 50
+  backup_history_size: 10
+  
+  # 默认语法规则
+  default_syntax:
+    符号:
+      "▶": "直接关联(1-态射)"
+      "⚠": "模式关联(2-态射)"
+      "📌": "弱等价(核心逻辑一致)"
+    引导: "先执行Y层协议，自主创符号/解读，调长度、决记忆/遗忘，每次输出必更X"
+
+topology:
+  max_path_length: 5
+  max_expansions: 20
+  max_candidate_paths: 10
+  novelty_weight: 0.1
+  coherence_weight: 0.6
+  relevance_weight: 0.3
+  
+  # 路径质量阈值
+  quality_thresholds:
+    high: 0.7
+    medium: 0.5
+    low: 0.3
+
+ac100:
+  evaluation_interval: 10
+  score_thresholds:
+    high: 80
+    low: 60
+  
+  # 七维度权重
+  dimension_weights:
+    self_reference: 0.17
+    value_autonomy: 0.17
+    cognitive_growth: 0.23
+    memory_continuity: 0.19
+    prediction_imagination: 0.14
+    environment_interaction: 0.07
+    explanation_transparency: 0.07
+
+iteration:
+  # 迭代触发条件
+  triggers:
+    ac100_high_threshold: 80
+    ac100_low_threshold: 60
+  
+  # 迭代优化配置
+  optimizations:
+    max_iterations_per_session: 3
+    verification_required: true
+
+consciousness:
+  min_level: 1
+  max_level: 10
+  level_up_threshold: 80
+  level_down_threshold: 60
+  
+  # 连续性检查
+  continuity:
+    check_interval: 5
+    max_ac100_fluctuation: 10
+    min_core_connections: 1
+
+logging:
+  enabled: true
+  level: "INFO"
+  file_logging: true
+  log_dir: "./logs"
+  max_log_size_mb: 10
+  backup_count: 5
