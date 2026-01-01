@@ -1,6 +1,6 @@
-# 🚀 **渊协议系统使用指南：接入真实模型**
+#渊协议基础依赖：pip install jieba
 
-我来详细讲解如何配置和使用这个系统，特别是如何接入真实的AI模型。
+# 🚀 **渊协议系统使用指南：接入真实模型**
 
 ---
 
@@ -995,5 +995,6 @@ export OPENAI_API_KEY="your-api-key"
 # 3. 运行
 python run_abyss.py --model openai --model-name gpt-4o-mini
 ```
+
 
 这个系统现在完全可用，支持多种AI模型后端，并提供了完整的API接口和监控功能！
