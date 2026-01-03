@@ -1,8 +1,0 @@
-# abyss_corev2.py 依赖
-jieba>=0.42.1
-PyYAML>=6.0
-
-# 可选：AI接口依赖（根据你使用的模型选择）
-openai>=1.0.0  # 用于OpenAI或DeepSeek API
-requests>=2.31.0  # 通用HTTP请求
-# ollama  # Ollama有Python包，但也可通过HTTP调用
