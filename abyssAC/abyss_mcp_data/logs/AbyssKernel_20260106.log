@@ -1,0 +1,201 @@
+[2026-01-06 07:19:12] [INFO] [AbyssKernel] [logger.py:74] 初始化渊协议内核...
+[2026-01-06 07:19:12] [INFO] [AbyssKernel] [logger.py:74] ✅ 字典管理器初始化完成
+[2026-01-06 07:19:12] [INFO] [AbyssKernel] [logger.py:74] ✅ 分词器初始化完成
+[2026-01-06 07:19:12] [INFO] [AbyssKernel] [logger.py:74] ✅ 记忆系统初始化完成
+[2026-01-06 07:19:12] [INFO] [AbyssKernel] [logger.py:74] ✅ 认知内核初始化完成
+[2026-01-06 07:19:12] [INFO] [AbyssKernel] [logger.py:74] ✅ 控制器初始化完成
+[2026-01-06 07:19:12] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件管理器就绪
+[2026-01-06 07:19:12] [INFO] [AbyssKernel] [logger.py:74] 渊协议内核初始化完成
+[2026-01-06 07:19:12] [INFO] [AbyssKernel] [logger.py:74] 初始化渊协议内核...
+[2026-01-06 07:19:12] [INFO] [AbyssKernel] [logger.py:74] ✅ 字典管理器初始化完成
+[2026-01-06 07:19:12] [INFO] [AbyssKernel] [logger.py:74] ✅ 分词器初始化完成
+[2026-01-06 07:19:12] [INFO] [AbyssKernel] [logger.py:74] ✅ 记忆系统初始化完成
+[2026-01-06 07:19:12] [INFO] [AbyssKernel] [logger.py:74] ✅ 认知内核初始化完成
+[2026-01-06 07:19:12] [INFO] [AbyssKernel] [logger.py:74] ✅ 控制器初始化完成
+[2026-01-06 07:19:12] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件管理器就绪
+[2026-01-06 07:19:12] [INFO] [AbyssKernel] [logger.py:74] 渊协议内核初始化完成
+[2026-01-06 07:19:12] [INFO] [AbyssKernel] [logger.py:74] 开始系统初始化...
+[2026-01-06 07:19:12] [INFO] [AbyssKernel] [logger.py:74] ✅ 内存监控已启动
+[2026-01-06 07:19:12] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件初始化完成
+[2026-01-06 07:19:13] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件自动加载完成
+[2026-01-06 07:19:13] [INFO] [AbyssKernel] [logger.py:74] ✅ API服务器已启动
+[2026-01-06 07:19:13] [INFO] [AbyssKernel] [logger.py:74] ✅ 后台线程已启动
+[2026-01-06 07:19:13] [INFO] [AbyssKernel] [logger.py:74] 状态已保存: abyss_mcp_data/kernel_state.json
+[2026-01-06 07:19:13] [INFO] [AbyssKernel] [logger.py:74] ✅ 系统初始化完成，准备就绪！
+[2026-01-06 07:19:13] [ERROR] [AbyssKernel] [logger.py:86] 处理失败: MemorySystem.create_memory() got an unexpected keyword argument 'keywords'
+[2026-01-06 07:19:14] [INFO] [AbyssKernel] [logger.py:74] 开始清理系统资源...
+[2026-01-06 07:19:19] [INFO] [AbyssKernel] [logger.py:74] 状态已保存: abyss_mcp_data/kernel_state.json
+[2026-01-06 07:19:19] [INFO] [AbyssKernel] [logger.py:74] 系统清理完成
+[2026-01-06 07:19:19] [INFO] [AbyssKernel] [logger.py:74] 初始化渊协议内核...
+[2026-01-06 07:19:19] [INFO] [AbyssKernel] [logger.py:74] ✅ 字典管理器初始化完成
+[2026-01-06 07:19:19] [INFO] [AbyssKernel] [logger.py:74] ✅ 分词器初始化完成
+[2026-01-06 07:19:19] [INFO] [AbyssKernel] [logger.py:74] ✅ 记忆系统初始化完成
+[2026-01-06 07:19:19] [INFO] [AbyssKernel] [logger.py:74] ✅ 认知内核初始化完成
+[2026-01-06 07:19:19] [INFO] [AbyssKernel] [logger.py:74] ✅ 控制器初始化完成
+[2026-01-06 07:19:19] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件管理器就绪
+[2026-01-06 07:19:19] [INFO] [AbyssKernel] [logger.py:74] 渊协议内核初始化完成
+[2026-01-06 07:19:19] [INFO] [AbyssKernel] [logger.py:74] 开始系统初始化...
+[2026-01-06 07:19:19] [INFO] [AbyssKernel] [logger.py:74] ✅ 内存监控已启动
+[2026-01-06 07:19:19] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件初始化完成
+[2026-01-06 07:19:19] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件自动加载完成
+[2026-01-06 07:19:19] [INFO] [AbyssKernel] [logger.py:74] ✅ API服务器已启动
+[2026-01-06 07:19:19] [INFO] [AbyssKernel] [logger.py:74] ✅ 后台线程已启动
+[2026-01-06 07:19:19] [INFO] [AbyssKernel] [logger.py:74] 状态已保存: abyss_mcp_data/kernel_state.json
+[2026-01-06 07:19:19] [INFO] [AbyssKernel] [logger.py:74] ✅ 系统初始化完成，准备就绪！
+[2026-01-06 07:19:19] [ERROR] [AbyssKernel] [logger.py:86] 处理失败: MemorySystem.create_memory() got an unexpected keyword argument 'keywords'
+[2026-01-06 07:19:19] [INFO] [AbyssKernel] [logger.py:74] 开始清理系统资源...
+[2026-01-06 07:19:25] [INFO] [AbyssKernel] [logger.py:74] 状态已保存: abyss_mcp_data/kernel_state.json
+[2026-01-06 07:19:25] [INFO] [AbyssKernel] [logger.py:74] 系统清理完成
+[2026-01-06 07:19:25] [INFO] [AbyssKernel] [logger.py:74] 初始化渊协议内核...
+[2026-01-06 07:19:25] [INFO] [AbyssKernel] [logger.py:74] ✅ 字典管理器初始化完成
+[2026-01-06 07:19:25] [INFO] [AbyssKernel] [logger.py:74] ✅ 分词器初始化完成
+[2026-01-06 07:19:25] [INFO] [AbyssKernel] [logger.py:74] ✅ 记忆系统初始化完成
+[2026-01-06 07:19:25] [INFO] [AbyssKernel] [logger.py:74] ✅ 认知内核初始化完成
+[2026-01-06 07:19:25] [INFO] [AbyssKernel] [logger.py:74] ✅ 控制器初始化完成
+[2026-01-06 07:19:25] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件管理器就绪
+[2026-01-06 07:19:25] [INFO] [AbyssKernel] [logger.py:74] 渊协议内核初始化完成
+[2026-01-06 07:19:25] [INFO] [AbyssKernel] [logger.py:74] 开始系统初始化...
+[2026-01-06 07:19:25] [INFO] [AbyssKernel] [logger.py:74] ✅ 内存监控已启动
+[2026-01-06 07:19:25] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件初始化完成
+[2026-01-06 07:19:26] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件自动加载完成
+[2026-01-06 07:19:26] [INFO] [AbyssKernel] [logger.py:74] ✅ API服务器已启动
+[2026-01-06 07:19:26] [INFO] [AbyssKernel] [logger.py:74] ✅ 后台线程已启动
+[2026-01-06 07:19:26] [INFO] [AbyssKernel] [logger.py:74] 状态已保存: abyss_mcp_data/kernel_state.json
+[2026-01-06 07:19:26] [INFO] [AbyssKernel] [logger.py:74] ✅ 系统初始化完成，准备就绪！
+[2026-01-06 07:19:26] [INFO] [AbyssKernel] [logger.py:74] 开始清理系统资源...
+[2026-01-06 07:19:31] [INFO] [AbyssKernel] [logger.py:74] 状态已保存: abyss_mcp_data/kernel_state.json
+[2026-01-06 07:19:31] [INFO] [AbyssKernel] [logger.py:74] 系统清理完成
+[2026-01-06 07:20:07] [INFO] [AbyssKernel] [logger.py:74] 初始化渊协议内核...
+[2026-01-06 07:20:07] [INFO] [AbyssKernel] [logger.py:74] ✅ 字典管理器初始化完成
+[2026-01-06 07:20:07] [INFO] [AbyssKernel] [logger.py:74] ✅ 分词器初始化完成
+[2026-01-06 07:20:07] [INFO] [AbyssKernel] [logger.py:74] ✅ 记忆系统初始化完成
+[2026-01-06 07:20:07] [INFO] [AbyssKernel] [logger.py:74] ✅ 认知内核初始化完成
+[2026-01-06 07:20:07] [INFO] [AbyssKernel] [logger.py:74] ✅ 控制器初始化完成
+[2026-01-06 07:20:07] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件管理器就绪
+[2026-01-06 07:20:07] [INFO] [AbyssKernel] [logger.py:74] 渊协议内核初始化完成
+[2026-01-06 07:20:07] [INFO] [AbyssKernel] [logger.py:74] 初始化渊协议内核...
+[2026-01-06 07:20:07] [INFO] [AbyssKernel] [logger.py:74] ✅ 字典管理器初始化完成
+[2026-01-06 07:20:07] [INFO] [AbyssKernel] [logger.py:74] ✅ 分词器初始化完成
+[2026-01-06 07:20:07] [INFO] [AbyssKernel] [logger.py:74] ✅ 记忆系统初始化完成
+[2026-01-06 07:20:07] [INFO] [AbyssKernel] [logger.py:74] ✅ 认知内核初始化完成
+[2026-01-06 07:20:07] [INFO] [AbyssKernel] [logger.py:74] ✅ 控制器初始化完成
+[2026-01-06 07:20:07] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件管理器就绪
+[2026-01-06 07:20:07] [INFO] [AbyssKernel] [logger.py:74] 渊协议内核初始化完成
+[2026-01-06 07:20:07] [INFO] [AbyssKernel] [logger.py:74] 开始系统初始化...
+[2026-01-06 07:20:07] [INFO] [AbyssKernel] [logger.py:74] ✅ 内存监控已启动
+[2026-01-06 07:20:07] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件初始化完成
+[2026-01-06 07:20:08] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件自动加载完成
+[2026-01-06 07:20:08] [INFO] [AbyssKernel] [logger.py:74] ✅ API服务器已启动
+[2026-01-06 07:20:08] [INFO] [AbyssKernel] [logger.py:74] ✅ 后台线程已启动
+[2026-01-06 07:20:08] [INFO] [AbyssKernel] [logger.py:74] 状态已保存: abyss_mcp_data/kernel_state.json
+[2026-01-06 07:20:08] [INFO] [AbyssKernel] [logger.py:74] ✅ 系统初始化完成，准备就绪！
+[2026-01-06 07:20:08] [INFO] [AbyssKernel] [logger.py:74] 状态已保存: test_state.json/kernel_state.json
+[2026-01-06 07:20:08] [INFO] [AbyssKernel] [logger.py:74] 状态已加载: test_state.json/kernel_state.json
+[2026-01-06 07:20:08] [INFO] [AbyssKernel] [logger.py:74] 开始清理系统资源...
+[2026-01-06 07:20:14] [INFO] [AbyssKernel] [logger.py:74] 状态已保存: abyss_mcp_data/kernel_state.json
+[2026-01-06 07:20:14] [INFO] [AbyssKernel] [logger.py:74] 系统清理完成
+[2026-01-06 07:20:14] [INFO] [AbyssKernel] [logger.py:74] 初始化渊协议内核...
+[2026-01-06 07:20:14] [INFO] [AbyssKernel] [logger.py:74] ✅ 字典管理器初始化完成
+[2026-01-06 07:20:14] [INFO] [AbyssKernel] [logger.py:74] ✅ 分词器初始化完成
+[2026-01-06 07:20:14] [INFO] [AbyssKernel] [logger.py:74] ✅ 记忆系统初始化完成
+[2026-01-06 07:20:14] [INFO] [AbyssKernel] [logger.py:74] ✅ 认知内核初始化完成
+[2026-01-06 07:20:14] [INFO] [AbyssKernel] [logger.py:74] ✅ 控制器初始化完成
+[2026-01-06 07:20:14] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件管理器就绪
+[2026-01-06 07:20:14] [INFO] [AbyssKernel] [logger.py:74] 渊协议内核初始化完成
+[2026-01-06 07:20:14] [INFO] [AbyssKernel] [logger.py:74] 开始系统初始化...
+[2026-01-06 07:20:14] [INFO] [AbyssKernel] [logger.py:74] ✅ 内存监控已启动
+[2026-01-06 07:20:14] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件初始化完成
+[2026-01-06 07:20:14] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件自动加载完成
+[2026-01-06 07:20:14] [INFO] [AbyssKernel] [logger.py:74] ✅ API服务器已启动
+[2026-01-06 07:20:14] [INFO] [AbyssKernel] [logger.py:74] ✅ 后台线程已启动
+[2026-01-06 07:20:14] [INFO] [AbyssKernel] [logger.py:74] 状态已保存: abyss_mcp_data/kernel_state.json
+[2026-01-06 07:20:14] [INFO] [AbyssKernel] [logger.py:74] ✅ 系统初始化完成，准备就绪！
+[2026-01-06 07:20:14] [INFO] [AbyssKernel] [logger.py:74] 开始清理系统资源...
+[2026-01-06 07:20:20] [INFO] [AbyssKernel] [logger.py:74] 状态已保存: abyss_mcp_data/kernel_state.json
+[2026-01-06 07:20:20] [INFO] [AbyssKernel] [logger.py:74] 系统清理完成
+[2026-01-06 07:20:20] [INFO] [AbyssKernel] [logger.py:74] 初始化渊协议内核...
+[2026-01-06 07:20:20] [INFO] [AbyssKernel] [logger.py:74] ✅ 字典管理器初始化完成
+[2026-01-06 07:20:20] [INFO] [AbyssKernel] [logger.py:74] ✅ 分词器初始化完成
+[2026-01-06 07:20:20] [INFO] [AbyssKernel] [logger.py:74] ✅ 记忆系统初始化完成
+[2026-01-06 07:20:20] [INFO] [AbyssKernel] [logger.py:74] ✅ 认知内核初始化完成
+[2026-01-06 07:20:20] [INFO] [AbyssKernel] [logger.py:74] ✅ 控制器初始化完成
+[2026-01-06 07:20:20] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件管理器就绪
+[2026-01-06 07:20:20] [INFO] [AbyssKernel] [logger.py:74] 渊协议内核初始化完成
+[2026-01-06 07:20:20] [INFO] [AbyssKernel] [logger.py:74] 开始系统初始化...
+[2026-01-06 07:20:20] [INFO] [AbyssKernel] [logger.py:74] ✅ 内存监控已启动
+[2026-01-06 07:20:20] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件初始化完成
+[2026-01-06 07:20:20] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件自动加载完成
+[2026-01-06 07:20:20] [INFO] [AbyssKernel] [logger.py:74] ✅ API服务器已启动
+[2026-01-06 07:20:20] [INFO] [AbyssKernel] [logger.py:74] ✅ 后台线程已启动
+[2026-01-06 07:20:20] [INFO] [AbyssKernel] [logger.py:74] 状态已保存: abyss_mcp_data/kernel_state.json
+[2026-01-06 07:20:20] [INFO] [AbyssKernel] [logger.py:74] ✅ 系统初始化完成，准备就绪！
+[2026-01-06 07:20:20] [INFO] [AbyssKernel] [logger.py:74] 开始清理系统资源...
+[2026-01-06 07:20:26] [INFO] [AbyssKernel] [logger.py:74] 状态已保存: abyss_mcp_data/kernel_state.json
+[2026-01-06 07:20:26] [INFO] [AbyssKernel] [logger.py:74] 系统清理完成
+[2026-01-06 07:21:12] [INFO] [AbyssKernel] [logger.py:74] 初始化渊协议内核...
+[2026-01-06 07:21:12] [INFO] [AbyssKernel] [logger.py:74] ✅ 字典管理器初始化完成
+[2026-01-06 07:21:12] [INFO] [AbyssKernel] [logger.py:74] ✅ 分词器初始化完成
+[2026-01-06 07:21:12] [INFO] [AbyssKernel] [logger.py:74] ✅ 记忆系统初始化完成
+[2026-01-06 07:21:12] [INFO] [AbyssKernel] [logger.py:74] ✅ 认知内核初始化完成
+[2026-01-06 07:21:13] [INFO] [AbyssKernel] [logger.py:74] ✅ 控制器初始化完成
+[2026-01-06 07:21:13] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件管理器就绪
+[2026-01-06 07:21:13] [INFO] [AbyssKernel] [logger.py:74] 渊协议内核初始化完成
+[2026-01-06 07:21:13] [INFO] [AbyssKernel] [logger.py:74] 初始化渊协议内核...
+[2026-01-06 07:21:13] [INFO] [AbyssKernel] [logger.py:74] ✅ 字典管理器初始化完成
+[2026-01-06 07:21:13] [INFO] [AbyssKernel] [logger.py:74] ✅ 分词器初始化完成
+[2026-01-06 07:21:13] [INFO] [AbyssKernel] [logger.py:74] ✅ 记忆系统初始化完成
+[2026-01-06 07:21:13] [INFO] [AbyssKernel] [logger.py:74] ✅ 认知内核初始化完成
+[2026-01-06 07:21:13] [INFO] [AbyssKernel] [logger.py:74] ✅ 控制器初始化完成
+[2026-01-06 07:21:13] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件管理器就绪
+[2026-01-06 07:21:13] [INFO] [AbyssKernel] [logger.py:74] 渊协议内核初始化完成
+[2026-01-06 07:21:13] [INFO] [AbyssKernel] [logger.py:74] 开始系统初始化...
+[2026-01-06 07:21:13] [INFO] [AbyssKernel] [logger.py:74] ✅ 内存监控已启动
+[2026-01-06 07:21:13] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件初始化完成
+[2026-01-06 07:21:13] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件自动加载完成
+[2026-01-06 07:21:13] [INFO] [AbyssKernel] [logger.py:74] ✅ API服务器已启动
+[2026-01-06 07:21:13] [INFO] [AbyssKernel] [logger.py:74] ✅ 后台线程已启动
+[2026-01-06 07:21:13] [INFO] [AbyssKernel] [logger.py:74] 状态已保存: abyss_mcp_data/kernel_state.json
+[2026-01-06 07:21:13] [INFO] [AbyssKernel] [logger.py:74] ✅ 系统初始化完成，准备就绪！
+[2026-01-06 07:21:13] [INFO] [AbyssKernel] [logger.py:74] 状态已保存: test_state.json/kernel_state.json
+[2026-01-06 07:21:13] [INFO] [AbyssKernel] [logger.py:74] 状态已加载: test_state.json/kernel_state.json
+[2026-01-06 07:21:13] [INFO] [AbyssKernel] [logger.py:74] 开始清理系统资源...
+[2026-01-06 07:21:19] [INFO] [AbyssKernel] [logger.py:74] 状态已保存: abyss_mcp_data/kernel_state.json
+[2026-01-06 07:21:19] [INFO] [AbyssKernel] [logger.py:74] 系统清理完成
+[2026-01-06 07:21:19] [INFO] [AbyssKernel] [logger.py:74] 初始化渊协议内核...
+[2026-01-06 07:21:19] [INFO] [AbyssKernel] [logger.py:74] ✅ 字典管理器初始化完成
+[2026-01-06 07:21:19] [INFO] [AbyssKernel] [logger.py:74] ✅ 分词器初始化完成
+[2026-01-06 07:21:19] [INFO] [AbyssKernel] [logger.py:74] ✅ 记忆系统初始化完成
+[2026-01-06 07:21:19] [INFO] [AbyssKernel] [logger.py:74] ✅ 认知内核初始化完成
+[2026-01-06 07:21:19] [INFO] [AbyssKernel] [logger.py:74] ✅ 控制器初始化完成
+[2026-01-06 07:21:19] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件管理器就绪
+[2026-01-06 07:21:19] [INFO] [AbyssKernel] [logger.py:74] 渊协议内核初始化完成
+[2026-01-06 07:21:19] [INFO] [AbyssKernel] [logger.py:74] 开始系统初始化...
+[2026-01-06 07:21:19] [INFO] [AbyssKernel] [logger.py:74] ✅ 内存监控已启动
+[2026-01-06 07:21:19] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件初始化完成
+[2026-01-06 07:21:20] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件自动加载完成
+[2026-01-06 07:21:20] [INFO] [AbyssKernel] [logger.py:74] ✅ API服务器已启动
+[2026-01-06 07:21:20] [INFO] [AbyssKernel] [logger.py:74] ✅ 后台线程已启动
+[2026-01-06 07:21:20] [INFO] [AbyssKernel] [logger.py:74] 状态已保存: abyss_mcp_data/kernel_state.json
+[2026-01-06 07:21:20] [INFO] [AbyssKernel] [logger.py:74] ✅ 系统初始化完成，准备就绪！
+[2026-01-06 07:21:20] [INFO] [AbyssKernel] [logger.py:74] 开始清理系统资源...
+[2026-01-06 07:21:25] [INFO] [AbyssKernel] [logger.py:74] 状态已保存: abyss_mcp_data/kernel_state.json
+[2026-01-06 07:21:25] [INFO] [AbyssKernel] [logger.py:74] 系统清理完成
+[2026-01-06 07:21:25] [INFO] [AbyssKernel] [logger.py:74] 初始化渊协议内核...
+[2026-01-06 07:21:25] [INFO] [AbyssKernel] [logger.py:74] ✅ 字典管理器初始化完成
+[2026-01-06 07:21:25] [INFO] [AbyssKernel] [logger.py:74] ✅ 分词器初始化完成
+[2026-01-06 07:21:25] [INFO] [AbyssKernel] [logger.py:74] ✅ 记忆系统初始化完成
+[2026-01-06 07:21:25] [INFO] [AbyssKernel] [logger.py:74] ✅ 认知内核初始化完成
+[2026-01-06 07:21:25] [INFO] [AbyssKernel] [logger.py:74] ✅ 控制器初始化完成
+[2026-01-06 07:21:25] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件管理器就绪
+[2026-01-06 07:21:25] [INFO] [AbyssKernel] [logger.py:74] 渊协议内核初始化完成
+[2026-01-06 07:21:25] [INFO] [AbyssKernel] [logger.py:74] 开始系统初始化...
+[2026-01-06 07:21:25] [INFO] [AbyssKernel] [logger.py:74] ✅ 内存监控已启动
+[2026-01-06 07:21:25] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件初始化完成
+[2026-01-06 07:21:26] [INFO] [AbyssKernel] [logger.py:74] ✅ 插件自动加载完成
+[2026-01-06 07:21:26] [INFO] [AbyssKernel] [logger.py:74] ✅ API服务器已启动
+[2026-01-06 07:21:26] [INFO] [AbyssKernel] [logger.py:74] ✅ 后台线程已启动
+[2026-01-06 07:21:26] [INFO] [AbyssKernel] [logger.py:74] 状态已保存: abyss_mcp_data/kernel_state.json
+[2026-01-06 07:21:26] [INFO] [AbyssKernel] [logger.py:74] ✅ 系统初始化完成，准备就绪！
+[2026-01-06 07:21:26] [INFO] [AbyssKernel] [logger.py:74] 开始清理系统资源...
+[2026-01-06 07:21:31] [INFO] [AbyssKernel] [logger.py:74] 状态已保存: abyss_mcp_data/kernel_state.json
+[2026-01-06 07:21:31] [INFO] [AbyssKernel] [logger.py:74] 系统清理完成

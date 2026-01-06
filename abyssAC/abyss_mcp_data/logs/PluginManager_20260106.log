@@ -1,0 +1,48 @@
+[2026-01-06 07:19:12] [INFO] [PluginManager] [logger.py:74] 插件管理器初始化完成
+[2026-01-06 07:19:13] [ERROR] [PluginManager] [logger.py:86] 加载插件失败: plugins/sample_monitor_plugin.py - Can't instantiate abstract class MonitorPlugin without an implementation for abstract methods 'cleanup', 'collect_metrics', 'initialize', 'process_alert'
+[2026-01-06 07:19:13] [ERROR] [PluginManager] [logger.py:86] 加载插件失败: plugins/sample_cognitive_plugin.py - Can't instantiate abstract class CognitivePlugin without an implementation for abstract methods 'cleanup', 'enhance_tokenization', 'initialize', 'process_activation'
+[2026-01-06 07:19:13] [INFO] [PluginManager] [logger.py:74] 自动加载插件完成: 0/2
+[2026-01-06 07:19:14] [INFO] [PluginManager] [logger.py:74] 开始清理插件...
+[2026-01-06 07:19:14] [INFO] [PluginManager] [logger.py:74] 插件清理完成
+[2026-01-06 07:19:19] [ERROR] [PluginManager] [logger.py:86] 加载插件失败: plugins/sample_cognitive_plugin.py - Can't instantiate abstract class CognitivePlugin without an implementation for abstract methods 'cleanup', 'enhance_tokenization', 'initialize', 'process_activation'
+[2026-01-06 07:19:19] [ERROR] [PluginManager] [logger.py:86] 加载插件失败: plugins/sample_monitor_plugin.py - Can't instantiate abstract class MonitorPlugin without an implementation for abstract methods 'cleanup', 'collect_metrics', 'initialize', 'process_alert'
+[2026-01-06 07:19:19] [INFO] [PluginManager] [logger.py:74] 自动加载插件完成: 0/2
+[2026-01-06 07:19:20] [INFO] [PluginManager] [logger.py:74] 开始清理插件...
+[2026-01-06 07:19:20] [INFO] [PluginManager] [logger.py:74] 插件清理完成
+[2026-01-06 07:19:25] [ERROR] [PluginManager] [logger.py:86] 加载插件失败: plugins/sample_cognitive_plugin.py - Can't instantiate abstract class CognitivePlugin without an implementation for abstract methods 'cleanup', 'enhance_tokenization', 'initialize', 'process_activation'
+[2026-01-06 07:19:26] [ERROR] [PluginManager] [logger.py:86] 加载插件失败: plugins/sample_monitor_plugin.py - Can't instantiate abstract class MonitorPlugin without an implementation for abstract methods 'cleanup', 'collect_metrics', 'initialize', 'process_alert'
+[2026-01-06 07:19:26] [INFO] [PluginManager] [logger.py:74] 自动加载插件完成: 0/2
+[2026-01-06 07:19:26] [INFO] [PluginManager] [logger.py:74] 开始清理插件...
+[2026-01-06 07:19:26] [INFO] [PluginManager] [logger.py:74] 插件清理完成
+[2026-01-06 07:20:07] [INFO] [PluginManager] [logger.py:74] 插件管理器初始化完成
+[2026-01-06 07:20:08] [ERROR] [PluginManager] [logger.py:86] 加载插件失败: plugins/sample_cognitive_plugin.py - Can't instantiate abstract class CognitivePlugin without an implementation for abstract methods 'cleanup', 'enhance_tokenization', 'initialize', 'process_activation'
+[2026-01-06 07:20:08] [ERROR] [PluginManager] [logger.py:86] 加载插件失败: plugins/sample_monitor_plugin.py - Can't instantiate abstract class MonitorPlugin without an implementation for abstract methods 'cleanup', 'collect_metrics', 'initialize', 'process_alert'
+[2026-01-06 07:20:08] [INFO] [PluginManager] [logger.py:74] 自动加载插件完成: 0/2
+[2026-01-06 07:20:09] [INFO] [PluginManager] [logger.py:74] 开始清理插件...
+[2026-01-06 07:20:09] [INFO] [PluginManager] [logger.py:74] 插件清理完成
+[2026-01-06 07:20:14] [ERROR] [PluginManager] [logger.py:86] 加载插件失败: plugins/sample_cognitive_plugin.py - Can't instantiate abstract class CognitivePlugin without an implementation for abstract methods 'cleanup', 'enhance_tokenization', 'initialize', 'process_activation'
+[2026-01-06 07:20:14] [ERROR] [PluginManager] [logger.py:86] 加载插件失败: plugins/sample_monitor_plugin.py - Can't instantiate abstract class MonitorPlugin without an implementation for abstract methods 'cleanup', 'collect_metrics', 'initialize', 'process_alert'
+[2026-01-06 07:20:14] [INFO] [PluginManager] [logger.py:74] 自动加载插件完成: 0/2
+[2026-01-06 07:20:15] [INFO] [PluginManager] [logger.py:74] 开始清理插件...
+[2026-01-06 07:20:15] [INFO] [PluginManager] [logger.py:74] 插件清理完成
+[2026-01-06 07:20:20] [ERROR] [PluginManager] [logger.py:86] 加载插件失败: plugins/sample_cognitive_plugin.py - Can't instantiate abstract class CognitivePlugin without an implementation for abstract methods 'cleanup', 'enhance_tokenization', 'initialize', 'process_activation'
+[2026-01-06 07:20:20] [ERROR] [PluginManager] [logger.py:86] 加载插件失败: plugins/sample_monitor_plugin.py - Can't instantiate abstract class MonitorPlugin without an implementation for abstract methods 'cleanup', 'collect_metrics', 'initialize', 'process_alert'
+[2026-01-06 07:20:20] [INFO] [PluginManager] [logger.py:74] 自动加载插件完成: 0/2
+[2026-01-06 07:20:21] [INFO] [PluginManager] [logger.py:74] 开始清理插件...
+[2026-01-06 07:20:21] [INFO] [PluginManager] [logger.py:74] 插件清理完成
+[2026-01-06 07:21:12] [INFO] [PluginManager] [logger.py:74] 插件管理器初始化完成
+[2026-01-06 07:21:13] [ERROR] [PluginManager] [logger.py:86] 加载插件失败: plugins/sample_cognitive_plugin.py - Can't instantiate abstract class CognitivePlugin without an implementation for abstract methods 'cleanup', 'enhance_tokenization', 'initialize', 'process_activation'
+[2026-01-06 07:21:13] [ERROR] [PluginManager] [logger.py:86] 加载插件失败: plugins/sample_monitor_plugin.py - Can't instantiate abstract class MonitorPlugin without an implementation for abstract methods 'cleanup', 'collect_metrics', 'initialize', 'process_alert'
+[2026-01-06 07:21:13] [INFO] [PluginManager] [logger.py:74] 自动加载插件完成: 0/2
+[2026-01-06 07:21:14] [INFO] [PluginManager] [logger.py:74] 开始清理插件...
+[2026-01-06 07:21:14] [INFO] [PluginManager] [logger.py:74] 插件清理完成
+[2026-01-06 07:21:19] [ERROR] [PluginManager] [logger.py:86] 加载插件失败: plugins/sample_monitor_plugin.py - Can't instantiate abstract class MonitorPlugin without an implementation for abstract methods 'cleanup', 'collect_metrics', 'initialize', 'process_alert'
+[2026-01-06 07:21:20] [ERROR] [PluginManager] [logger.py:86] 加载插件失败: plugins/sample_cognitive_plugin.py - Can't instantiate abstract class CognitivePlugin without an implementation for abstract methods 'cleanup', 'enhance_tokenization', 'initialize', 'process_activation'
+[2026-01-06 07:21:20] [INFO] [PluginManager] [logger.py:74] 自动加载插件完成: 0/2
+[2026-01-06 07:21:20] [INFO] [PluginManager] [logger.py:74] 开始清理插件...
+[2026-01-06 07:21:20] [INFO] [PluginManager] [logger.py:74] 插件清理完成
+[2026-01-06 07:21:26] [ERROR] [PluginManager] [logger.py:86] 加载插件失败: plugins/sample_monitor_plugin.py - Can't instantiate abstract class MonitorPlugin without an implementation for abstract methods 'cleanup', 'collect_metrics', 'initialize', 'process_alert'
+[2026-01-06 07:21:26] [ERROR] [PluginManager] [logger.py:86] 加载插件失败: plugins/sample_cognitive_plugin.py - Can't instantiate abstract class CognitivePlugin without an implementation for abstract methods 'cleanup', 'enhance_tokenization', 'initialize', 'process_activation'
+[2026-01-06 07:21:26] [INFO] [PluginManager] [logger.py:74] 自动加载插件完成: 0/2
+[2026-01-06 07:21:26] [INFO] [PluginManager] [logger.py:74] 开始清理插件...
+[2026-01-06 07:21:26] [INFO] [PluginManager] [logger.py:74] 插件清理完成

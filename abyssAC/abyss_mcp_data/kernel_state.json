@@ -1,0 +1,59 @@
+{
+  "version": "4.0.0",
+  "timestamp": "2026-01-06T07:21:31.976389",
+  "uptime": 6.451961040496826,
+  "kernel": {
+    "version": "4.0.0",
+    "start_time": 1767655285.5244434,
+    "uptime": 6.451962232589722,
+    "initialized": true,
+    "running": true
+  },
+  "dictionary": {
+    "dictionaries": {
+      "default": {
+        "id": "default",
+        "size": 96,
+        "created": 1767655152.8203235,
+        "metadata": {}
+      }
+    },
+    "stats": {
+      "total_words_added": 0,
+      "total_lookups": 0,
+      "cache_hits": 0,
+      "fissions_performed": 0
+    }
+  },
+  "memory": {
+    "memory_counter": 0,
+    "layers": {
+      "METACOGNITIVE": [],
+      "INTEGRATION": [],
+      "CATEGORICAL": [],
+      "WORKING": []
+    },
+    "fused_memories": {}
+  },
+  "cognitive": {
+    "total_activations": 0,
+    "activation_patterns": {},
+    "activated_nodes": [],
+    "activation_history": [],
+    "drift_score": 0.0,
+    "stats": {
+      "total_activations": 0,
+      "cache_hits": 0,
+      "propagations": 0
+    }
+  },
+  "plugins": {
+    "total_plugins": 0,
+    "type_distribution": {},
+    "status_distribution": {
+      "enabled": 0,
+      "disabled": 0
+    },
+    "plugin_names": []
+  }
+}

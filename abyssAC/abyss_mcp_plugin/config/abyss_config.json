@@ -1,0 +1,119 @@
+{
+  "system": {
+    "name": "AbyssMCP",
+    "version": "4.0.0",
+    "auto_save_interval": 300,
+    "health_check_interval": 60,
+    "enable_metrics": true,
+    "max_memory_mb": 500,
+    "base_path": "./abyss_mcp_data",
+    "plugin_path": "./plugins"
+  },
+  "dictionary": {
+    "max_dict_size": 5000,
+    "max_dict_files": 20,
+    "activation_threshold": 0.3,
+    "fission_enabled": true,
+    "fission_check_interval": 100,
+    "split_threshold": 0.8,
+    "merge_threshold": 0.3,
+    "cache_size": 1000,
+    "shadow_index_size": 1000,
+    "index_max_size": 10000,
+    "index_lru_size": 1000,
+    "segment_lock_count": 8,
+    "fission_threshold": 0.8,
+    "edge_node_threshold": 0.3,
+    "core_morphism_strength": 0.7,
+    "analysis_history_size": 20
+  },
+  "tokenizer": {
+    "cache_size": 1000,
+    "enable_activation_cache": true,
+    "activation_cache_size": 500,
+    "max_keywords_per_text": 15,
+    "min_word_length": 2,
+    "max_word_length": 20,
+    "extract_english": true,
+    "extract_numbers": false,
+    "remove_punctuation": true,
+    "dict_word_boost": 1.5
+  },
+  "cognitive": {
+    "enable_propagation": true,
+    "score_base_value": 0.1,
+    "complexity_weight": 0.3,
+    "confidence_weight": 0.7,
+    "depth_weight": 0.3,
+    "match_score_weight": 0.6,
+    "high_score_threshold": 0.7,
+    "medium_score_threshold": 0.5,
+    "low_score_threshold": 0.3,
+    "complexity_max_chars": 2000,
+    "complexity_max_sentences": 20,
+    "drift_log_keep": 50,
+    "activation_cache_size": 500,
+    "enable_activation_cache": true
+  },
+  "xlayer": {
+    "symbol_ttl_hours": 24,
+    "max_symbols": 30,
+    "backup_history_size": 10
+  },
+  "ac100": {
+    "evaluation_interval": 5,
+    "dimension_weights": {
+      "self_reference": 0.15,
+      "value_autonomy": 0.15,
+      "cognitive_growth": 0.15,
+      "memory_continuity": 0.15,
+      "prediction_imagination": 0.15,
+      "environment_interaction": 0.1,
+      "explanation_transparency": 0.15
+    }
+  },
+  "memory": {
+    "working_memory_size": 100,
+    "max_memory_per_layer": 1000,
+    "cleanup_interval": 3600,
+    "importance_threshold": 0.5,
+    "fuse_similarity_threshold": 0.7,
+    "cleanup_batch_size": 10,
+    "time_decay_hours": 168
+  },
+  "topology": {
+    "max_path_length": 8,
+    "max_expansions": 50,
+    "max_candidate_paths": 20,
+    "novelty_weight": 0.3,
+    "coherence_weight": 0.5,
+    "relevance_weight": 0.2,
+    "cache_ttl_seconds": 300
+  },
+  "api": {
+    "enabled": true,
+    "host": "127.0.0.1",
+    "port": 8080,
+    "debug": false,
+    "cors_enabled": true,
+    "rate_limit": {
+      "enabled": true,
+      "requests_per_minute": 60
+    }
+  },
+  "plugins": {
+    "enabled": true,
+    "auto_load": true,
+    "plugin_dirs": ["./plugins", "./custom_plugins"],
+    "safe_mode": true,
+    "blacklist": [],
+    "whitelist": []
+  },
+  "performance": {
+    "cache_ttl_seconds": 300,
+    "enable_async_tasks": true,
+    "max_thread_workers": 10,
+    "io_timeout": 30,
+    "gc_threshold": 10000
+  }
+}
