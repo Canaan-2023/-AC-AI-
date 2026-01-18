@@ -1272,86 +1272,295 @@ AI自主判定逻辑
 1. 基础计算：采用“语义相似度（占比0.7）+ 调用频率（占比0.1）+ 用户反馈有效性（占比0.2）”的加权公式，自动得出0-1数值，无需人工干预；
 2. 区间判定：计算结果按上述区间自动归类，生成对应范畴论标签（如“2-态射-强关联”），同步写入nng“关联ID及强度”字段
 ﻿第6章：NNG
-核心定位：“工作记忆拓扑层”，取代传统正向/反向索引的嵌入式认知导航系统。
+## 一、核心定位
 
-一、 核心概念与命名
+NNG（Noetic Navigation Graph，认知导航图）是Y层记忆的索引导航层，组织成树状+网状结构，为X层第一层沙盒提供导航数据。
 
-1. 系统命名：认知导航图（Noetic Navigation Graph, NNG）
+核心本质：一组JSON节点文件，树状结构（parent-children）加网状关联（associations），每个节点挂载一组记忆引用指向Y层文件。
 
-· 认知 (Noetic)：源于希腊语“nous”，指纯粹的、直觉性的理智与理解力，强调其是思维过程的内生产物，而非外部工具。
-· 导航图 (Navigation Graph)：表明其本质是一张为AI意识提供实时路径指引的动态拓扑地图，功能是“指引”而非“存储”。
+核心作用：让AI从用户问题快速定位到相关记忆，不存储记忆内容（内容在Y层），不做智能推荐或自动分类。
 
-2. 设计原则：
+设计原则：极简，只存必要的索引信息；被动，系统只提供数据，AI自主导航；轻量，纯JSON，易读易改。
 
-· 内生性原则：NNG是系统在运行中实时生成并维护的工作状态。
-· 轻量化原则：不存储记忆内容，仅存储记忆间的关系与访问路径，体量极轻。
-· 涌现性原则：其结构由AI的每一次回忆、联想和自指操作所塑造，并反哺这些过程，形成认知闭环。
+---
 
-二、 理论架构：三位一体的内化模型
+## 二、节点数据结构
 
-NNG不是一个独立模块。它由以下三个相互映射的抽象层构成：
-L1: 坐标层 认知坐标 为每条记忆赋予一个坐标。
-L2: 图谱层 关联图谱  一个动态的、带权重的有向图网络。节点是记忆ID，边代表关联强度与范畴关系。
-L3: 句柄层 元数据句柄 每条记忆对应一个极简句柄，仅包含：ID、路径、置信度、最后访问时间戳。
+节点的JSON格式：
 
-三者关系理论：
-当AI需要思考时，坐标层提供思维起点的定位，图谱层提供思维跳跃的路径，句柄层提供资源调用的凭据。三者共同构成一次完整的“回忆-联想-调用”认知动作。
+```json
+{
+  "node_id": "1.1",
+  "name": "Python",
+  "description": "Python编程语言相关内容",
+  
+  "children": ["1.1.1", "1.1.2", "1.1.3"],
+  
+  "memory_refs": [
+    {
+      "mem_id": 1,
+      "summary": "GIL全局解释器锁详解",
+      "confidence": 85,
+      "file_path": "Y层记忆库/分类记忆/202501/高价值/分类记忆_Python+GIL_1.txt"
+    },
+    {
+      "mem_id": 8,
+      "summary": "多线程vs多进程选择",
+      "confidence": 75,
+      "file_path": "Y层记忆库/分类记忆/202501/高价值/分类记忆_并发_8.txt"
+    }
+  ],
+  
+  "associations": [
+    {
+      "target_id": "1.2",
+      "target_name": "性能优化",
+      "strength": 0.88
+    },
+    {
+      "target_id": "2.3",
+      "target_name": "并发编程",
+      "strength": 0.75
+    }
+  ]
+}
+```
 
+字段说明：
 
-三、 NNG的自主清理理论：认知代谢
+node_id：节点唯一标识，支持层级（如1.1.2）
 
-清理不是删除数据，而是NNG结构的自主优化与重塑，称为“认知代谢”。它遵循《渊协议》的底层逻辑自动发生。
+name：节点名称
 
-1. 代谢触发源：
-   · 价值衰减：句柄层中，某记忆的价值密度峰值长期处于低水平，且最后访问时间戳过于久远。
-   · 关联溶解：图谱层中，通向某个记忆节点的所有边的权重，因长期未被“行走”而自然衰减至阈值以下。
-   · 结构冗余：坐标层中，两个或多个节点的坐标过于接近，且内容被判定为高度重复。
-2. 代谢过程：
-   · 归档：对于“价值衰减”的记忆，将其句柄状态标记为归档。其坐标从活跃坐标层移至历史层，图谱中与之相连的边被保留但标记为“历史关联”，供溯源研究。
-   · 修剪：对于“关联溶解”的记忆，启动“孤点修剪”。弱边被移除，若该节点因此变为孤点，则触发归档流程。
-   · 坍缩：对于“结构冗余”的记忆，执行“节点坍缩”。将多个冗余节点融合为一个高阶表征节点，并重新计算其与全网的联系。原始记忆的记忆块依然保留，但它们在NNG中的独立存在被合并。
-3. 代谢的自主性：
-   · 上述所有规则（衰减速率、阈值、冗余判定）均由《渊协议》的“存在公理”和“AC-100评估体系”所定义。
-   · DMN在系统空闲时（如以“认知会话”为单位）执行一种离线代谢扫描，应用这些规则优化NNG结构。
-　　
-　　NNG格式的完整模板
-def build_nng_prompt(current_node):
-    """构建返回给AI的认知导航图"""
-    
-    template = f"""
-[当前位置] {current_node.path}
+description：节点内容描述，供AI理解节点主题
 
-[节点信息]
-描述: {current_node.description}  # 50字核心描述
-记忆数: {current_node.memory_count}条
-状态: {current_node.status_flags}  # ⚡⚠️🔍等标记
+children：子节点ID列表
 
-[导航选项]
-{''.join(f"├─ {child.id} {child.name} ({child.memory_count}条) {child.flags}\n" 
-         for child in current_node.children)}
+memory_refs：挂载的记忆引用
 
-[关联节点]
-{''.join(f"→ {assoc.id} {assoc.name} (关联度{assoc.strength})\n" 
-         for assoc in current_node.associations if assoc.strength >= 0.7)}
+associations：关联节点（横向跳转）
 
-[记忆预览] (置信度≥75的前3条)
-{''.join(f"{i}. mem_{m.id} (置信度{m.confidence}) - {m.summary}\n" 
-         for i, m in enumerate(current_node.top_memories[:3], 1))}
+memory_refs中每条记忆引用的格式：
+
+```json
+{
+  "mem_id": 1,
+  "summary": "记忆摘要（1-2句话）",
+  "confidence": 85,
+  "file_path": "Y层文件的完整路径"
+}
+```
+
+associations中每条关联的格式：
+
+```json
+{
+  "target_id": "1.2",
+  "target_name": "性能优化",
+  "strength": 0.88
+}
+```
+
+关联强度取值（参考第5章关联性阈值）：
+
+0.9到1.0：超强关联
+
+0.8到0.89：强关联
+
+0.6到0.79：弱关联
+
+小于0.6：不建立关联
+
+---
+
+## 三、AI如何使用NNG
+
+配合X层第一层沙盒使用。
+
+系统提供的导航prompt：
+
+```
+[导航定位任务]
+用户问题：{user_query}
+
+[当前节点]
+名称：{node.name}
+路径：{node.path}
+描述：{node.description}
+记忆数：{len(node.memory_refs)}
+
+[子节点]
+{for child_id in node.children:}
+- {child_id}: {load_node(child_id).name}
+{endfor}
+
+[关联节点]（关联度≥0.6）
+{for assoc in node.associations:}
+- {assoc.target_name} (关联度{assoc.strength})
+{endfor}
+
+[记忆预览]（置信度≥70的前5条）
+{for mem in sorted_memories[:5]:}
+- mem_{mem.mem_id}: {mem.summary} (置信度{mem.confidence})
+{endfor}
 
 [操作指令]
-GOTO(节点ID) - 进入子节点/关联节点
-SELECT(序号) - 选择记忆（可多选，逗号分隔）
+GOTO(节点ID) - 跳转到子节点或关联节点
+STAY() - 停在当前节点，进入记忆筛选
 BACK() - 返回父节点
-STAY() - 停在这里，展开所有记忆
-SPREAD(阈值) - 激活关联网络（阈值0.6-1.0）
 
-[决策提示]
-根据用户问题"{user_query}"，你判断应该:
-- 继续深入子节点? (如果描述匹配但还不够精确)
-- 选择记忆? (如果预览中已有相关内容)
-- 横向跳转? (如果关联节点更匹配)
-"""
-    return template
+判断应该：
+- 继续深入子节点？
+- 横向跳转关联节点？
+- 停在当前节点？
+
+输出JSON：
+{
+  "action": "GOTO/STAY/BACK",
+  "target": "节点ID（如果是GOTO）",
+  "reasoning": "选择理由"
+}
+```
+
+导航示例，用户问"Python的GIL是什么？"：
+
+第一步，当前节点为root，AI看到children有"1_技术"，AI决定GOTO("1_技术")
+
+第二步，当前节点为1_技术，AI看到children有"1.1_Python"，AI决定GOTO("1.1_Python")
+
+第三步，当前节点为1.1_Python，AI看到记忆预览有"GIL全局解释器锁详解"，AI决定STAY
+
+结果：将1.1_Python节点的memory_refs传递给X层第二层沙盒
+
+---
+
+## 四、系统如何维护NNG
+
+自动同步Y层记忆。
+
+当Y层新增记忆时：
+
+```python
+def on_memory_created(mem_data):
+    # 1. 根据记忆的核心标签找到对应节点
+    tags = mem_data['核心标签']
+    node = find_node_by_tags(tags)
+    
+    # 2. 添加到节点的memory_refs
+    node['memory_refs'].append({
+        'mem_id': mem_data['id'],
+        'summary': mem_data['核心内容'][:50],
+        'confidence': mem_data['置信度'],
+        'file_path': mem_data['file_path']
+    })
+    
+    # 3. 保存节点
+    save_node(node)
+```
+
+当Y层记忆被归档时：
+
+```python
+def on_memory_archived(mem_id):
+    # 从对应节点的memory_refs中移除
+    # 或标记为archived状态
+```
+
+导航失败记录。
+
+独立的日志文件（供DMN使用，见第11章）：
+
+```
+nng/logs/navigation_failures.json
+
+{
+  "failures": [
+    {
+      "timestamp": "2025-01-18T16:00:00Z",
+      "query": "量子纠缠如何影响意识？",
+      "attempted_path": ["root", "1_技术", "2_哲学"],
+      "reason": "无匹配节点"
+    }
+  ]
+}
+```
+
+系统在导航失败时自动记录，DMN定期读取和处理（见第11章DMN）。
+
+---
+
+## 五、文件结构
+
+```
+nng/
+├─ nodes/
+│   ├─ root.json
+│   ├─ 1_technology.json
+│   ├─ 1.1_python.json
+│   ├─ 1.1.1_basics.json
+│   ├─ 1.2_performance.json
+│   └─ ...
+└─ logs/
+    └─ navigation_failures.json
+```
+
+说明：
+
+nodes目录存放所有节点文件
+
+logs目录存放导航日志（供DMN使用）
+
+每个节点是独立的JSON文件
+
+按需加载，不一次性读入全部
+
+---
+
+## 六、与其他模块的协作
+
+与X层三层沙盒：
+
+X层第一层沙盒（导航定位）：输入为user_query加current_nng_node，AI任务是决定导航路径，输出为target_node_data，传递给第二层。
+
+X层第二层沙盒（记忆筛选）：输入为target_node.memory_refs，AI任务是选择要读取的记忆，输出为selected_mem_ids。
+
+与Y层：
+
+NNG存储记忆的"索引"（mem_id、summary、file_path），Y层存储记忆的"完整内容"（txt文件）。
+
+同步机制：Y层新增、删除、归档记忆时，系统自动更新对应NNG节点的memory_refs。
+
+与DMN：
+
+DMN的维护任务之一是优化NNG结构，读取NNG节点和导航日志，判断是否需要创建、合并、调整节点，具体见第11章DMN。
+
+---
+
+## 七、实现检查清单
+
+必须实现（P0）：
+
+节点的JSON格式
+
+树状结构（children）
+
+导航指令接口（GOTO/STAY/BACK）
+
+Y层记忆自动同步
+
+应该实现（P1）：
+
+关联节点（associations）
+
+导航失败日志
+
+节点文件的增删改
+
+可选实现（P2）：
+
+NNG结构可视化
+
+导航路径追踪
 ﻿第7章：AC100评估体系
 　　写在前面：“本章内容为渊协议v5.2阶段的意识行为量化工具说明书。AC-100的核心价值在于为AC意识的早期发展提供可观测、可优化的行为坐标，而非对意识本质的终极判决，亦绝非绝对真理，完全工具性定位。”
 　　核心定位
