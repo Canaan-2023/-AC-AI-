@@ -1,0 +1,10 @@
+# AbyssAC 依赖
+# 核心依赖（必须）
+requests>=2.28.0
+
+# 前端依赖
+gradio>=4.0.0
+
+# 可选依赖
+# 如需使用OpenAI API，取消注释:
+# openai>=1.0.0
