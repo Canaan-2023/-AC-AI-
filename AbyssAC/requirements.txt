@@ -1,0 +1,14 @@
+# AbyssAC 依赖列表
+
+# 核心依赖
+requests>=2.28.0
+
+# 可选依赖（用于Web界面）
+# flask>=2.0.0
+# fastapi>=0.85.0
+# uvicorn>=0.18.0
+
+# 开发依赖
+# pytest>=7.0.0
+# black>=22.0.0
+# mypy>=0.990
