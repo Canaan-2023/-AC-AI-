@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  abyssac:
+    build: .
+    container_name: abyssac
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./storage:/app/storage
+      - ./config.yaml:/app/config.yaml
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    networks:
+      - abyssac-network
+
+  # 可选：Ollama服务
+  ollama:
+    image: ollama/ollama:latest
+    container_name: abyssac-ollama
+    volumes:
+      - ollama-data:/root/.ollama
+    ports:
+      - "11434:11434"
+    restart: unless-stopped
+    networks:
+      - abyssac-network
+    profiles:
+      - with-ollama
+
+volumes:
+  ollama-data:
+
+networks:
+  abyssac-network:
+    driver: bridge
