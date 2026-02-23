@@ -1,0 +1,60 @@
+{
+  "paths": {
+    "nngrootpath": "storage/nng/",
+    "memoryrootpath": "storage/Y层记忆库/",
+    "temp_path": "temp/",
+    "navlogpath": "X层/navigation_logs/",
+    "systemlogpath": "logs/"
+  },
+  "system": {
+    "system_time": "2026-02-20 10:00:00",
+    "timestamp_format": "YYYY-MM-DD HH:MM:SS",
+    "max_memory_size": 1048576000,
+    "max_nng_nodes": 10000,
+    "idle_threshold": 300
+  },
+  "llm": {
+    "model_name": "llama3",
+    "api_endpoint": "http://localhost:11434",
+    "max_tokens": 4096,
+    "temperature": 0.7,
+    "timeout": 60,
+    "retry_count": 3
+  },
+  "sandbox": {
+    "nng": {
+      "max_depth": 5,
+      "max_nodes": 100
+    },
+    "memory": {
+      "max_files": 50,
+      "max_size": 10485760
+    },
+    "context": {
+      "max_length": 8192,
+      "compression_threshold": 4096
+    }
+  },
+  "security": {
+    "access_control": {
+      "enabled": true,
+      "default_permission": "read"
+    }
+  },
+  "confidence": {
+    "thresholds": {
+      "high": 0.90,
+      "medium_high": 0.70,
+      "medium": 0.50,
+      "medium_low": 0.30,
+      "low": 0.00
+    },
+    "strategies": {
+      "high": "direct_use",
+      "medium_high": "use_with_other_info",
+      "medium": "use_after_verification",
+      "medium_low": "use_with_caution",
+      "low": "do_not_use"
+    }
+  }
+}
