@@ -21,6 +21,8 @@
 
 ## 安装配置
 
+下载mcp_workflow.py和mcp.json在对应‘ABYSSAC记忆MCP’文件夹
+
 ### 环境要求
 
 - Python 3.10+
