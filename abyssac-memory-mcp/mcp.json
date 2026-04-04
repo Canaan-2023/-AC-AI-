@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "abyssac-memory": {
+      "command": "python",
+      "args": ["abyssac_memory_mcp.py"],
+      "env": {
+        "ABYSSAC_ROOT": "${ABYSSAC_ROOT:-~/.abyssac}",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}
